@@ -1,42 +1,44 @@
-# Secure Password Generator
+# Random Password Generator
 
 ## Overview
 
-Secure Password Generator is a Python desktop application that helps users create strong passwords according to their preferred length and character requirements. The application provides a simple graphical interface along with password strength analysis, entropy estimation, clipboard support, and recent password history.
+Random Password Generator is a Python desktop application that helps users create strong passwords based on their preferred length and character requirements.
 
-The project focuses on secure password generation using Python's `secrets` module rather than the standard `random` module.
+The application provides a graphical user interface with password generation, password strength analysis, entropy estimation, clipboard support, and recent password history.
+
+The project uses Python's `secrets` module for secure random password generation instead of the standard `random` module.
 
 ## Features
 
-* Generate secure random passwords
-* Select password length from 8 to 64 characters
-* Include uppercase letters
-* Include lowercase letters
-* Include numbers
-* Include special symbols
-* Require at least two character categories
-* Exclude visually similar characters
-* Display password strength
-* Display numerical strength score
-* Calculate estimated password entropy
-* Copy generated passwords to the clipboard
-* Store the five most recently generated passwords
-* Clear password history
-* Dark-themed graphical user interface
+- Generate secure random passwords
+- Select password length from 8 to 64 characters
+- Include uppercase letters
+- Include lowercase letters
+- Include numbers
+- Include special symbols
+- Require at least two character categories
+- Exclude visually similar characters
+- Display password strength
+- Display numerical strength score
+- Calculate estimated password entropy
+- Copy generated passwords to the clipboard
+- Store the five most recently generated passwords
+- Clear password history
+- Dark-themed graphical user interface
 
 ## Technologies Used
 
-* **Python 3.14** — Application development
-* **Tkinter** — Graphical user interface
-* **secrets** — Secure random password generation
-* **string** — Standard character sets
-* **math** — Entropy calculation
-* **Pyperclip** — Clipboard functionality
+- **Python 3.14** — Application development
+- **Tkinter** — Graphical user interface
+- **secrets** — Secure random password generation
+- **string** — Standard character sets
+- **math** — Entropy calculation
+- **Pyperclip** — Clipboard functionality
 
 ## Project Structure
 
 ```text
-PasswordGenerator/
+Python-Task3-RandomPasswordGenerator/
 │
 ├── app.py
 ├── constants.py
@@ -44,10 +46,10 @@ PasswordGenerator/
 ├── strength.py
 ├── requirements.txt
 ├── README.md
-└── screenshots/
-```
+└── Screenshot
+````
 
-### File Description
+## File Description
 
 | File               | Purpose                                                         |
 | ------------------ | --------------------------------------------------------------- |
@@ -57,7 +59,7 @@ PasswordGenerator/
 | `strength.py`      | Calculates password strength and estimated entropy              |
 | `requirements.txt` | Lists external Python dependencies                              |
 | `README.md`        | Project documentation                                           |
-| `screenshots/`     | Contains application screenshots                                |
+| `Screenshot`       | Demonstrates the working application                            |
 
 ## Installation
 
@@ -86,7 +88,7 @@ python app.py
 2. Select the required password length using the slider.
 3. Select at least two character categories.
 4. Choose uppercase letters, lowercase letters, numbers, and/or symbols.
-5. Enable **Exclude Similar Characters** when needed.
+5. Enable **Exclude Similar Characters** when required.
 6. Click **Generate Password**.
 7. The generated password will appear in the output field.
 8. Review the displayed strength score and entropy.
@@ -98,11 +100,13 @@ python app.py
 
 The application uses Python's `secrets` module for password generation. This module is designed for security-sensitive random values and is more appropriate for password generation than the general-purpose `random` module.
 
-When multiple character categories are selected, the generator first adds a character from each selected category and then fills the remaining positions from the combined character pool. The resulting characters are securely shuffled before the password is returned.
+When multiple character categories are selected, the generator first adds a character from each selected category and then fills the remaining positions from the combined character pool.
+
+The resulting characters are securely shuffled before the password is returned.
 
 ## Password Strength Analysis
 
-The application evaluates the generated password using factors including:
+The application evaluates the generated password using:
 
 * Password length
 * Lowercase characters
@@ -116,15 +120,9 @@ The interface displays:
 * Numerical strength score
 * Estimated entropy in bits
 
-## Screenshots
+## Screenshot
 
-The `screenshots` folder contains images demonstrating the application's functionality.
-
-Recommended screenshots include:
-
-1. Main application interface
-2. Generated password with strength analysis
-3. Password history
+The project includes a screenshot demonstrating the working Random Password Generator application.
 
 ## Future Improvements
 
@@ -132,10 +130,10 @@ Possible future improvements include:
 
 * Password visibility toggle
 * Custom symbol selection
-* Passphrase generation
+* Passphrase generator
 * Light and dark theme switching
-* Encrypted password-history storage
-* Additional password-quality checks
+* Encrypted password history
+* Additional password security checks
 
 ## Author
 
@@ -143,3 +141,12 @@ Possible future improvements include:
 
 Python Programming Internship Project
 **Oasis Infobyte**
+
+```
+
+### Do this now
+
+Copy the entire content above → open your **`README.md`** on GitHub → **Edit** → replace the old content → **Commit changes**.
+
+**Don't change any other files.**
+```
