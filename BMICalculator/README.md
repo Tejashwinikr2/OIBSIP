@@ -209,5 +209,3 @@ Author
 Tejashwini
 Python Programming Internship Project
 Oasis Infobyte
-
-Don't upload the README to GitHub yet if `app.py` doesn't have the database/history/graph features—we still need to add those to make the README accurately match the finished application.
